@@ -6,6 +6,33 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+  <script>
+  const getMessagesAndAnswer = () => {
+    window.addEventListener("message", function(message) {
+      if (message.origin == "http://localhost:3000") {
+        if (message.data == "init") {
+          const h = document.querySelectorAll("h1, h2, h3, h4, h5, h6, li, p, div, span, mark, ins, del, sup, sub, small, i, b, blockquote, q, strong, em");
+          h.forEach ((tag) => {
+            if (tag.childNodes[0] && tag.childNodes[0].textContent.trim() != "") {
+              tag.contentEditable = "true";
+              tag.addEventListener("click", () => {
+                const old_content = tag.innerText;
+                message.source.postMessage(`§${old_content}`, message.origin);
+              }, { once: true });
+              tag.addEventListener("keyup", () => {
+                  const new_content = tag.innerText;
+                  message.source.postMessage(new_content, message.origin)
+              });
+            } else {
+            return;
+            }
+          })
+        }
+      }
+    });
+  }
+  getMessagesAndAnswer();
+  </script>
 </head>
 <body>
   <div class="container text-center">
