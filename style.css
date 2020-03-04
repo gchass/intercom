@@ -8,8 +8,8 @@ body {
 }
 
 h1 {
-  color: #5A48E0;
-  font-size: 30px;
+  color: black;
+  font-size: 80px;
 }
 
 h2 {
@@ -113,6 +113,8 @@ padding: 15px 20px;
   display: flex;
   align-items: center;
 }
+
+
 
 
 
