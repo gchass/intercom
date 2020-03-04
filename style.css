@@ -77,8 +77,6 @@ a:hover {
 }
 
 
-
-
 .card-white {
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -109,3 +107,35 @@ padding: 15px 20px;
 #introduction {
   padding-bottom: 20px;
 }
+
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
