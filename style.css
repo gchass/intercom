@@ -171,9 +171,14 @@ input::placeholder {
   font-weight: bold;
   width: 100px
   margin-left: 50px;
-  w
 }
 
+
+.testimonials {
+  width: 100%;
+  background-color: #F5F0EB;
+  hight: 900px;
+}
 
 
 
