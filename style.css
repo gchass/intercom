@@ -3,19 +3,16 @@
 h1 {
   color: black;
   font-size: 80px;
+  font-weight: bold;
 }
 
 h2 {
-  color: #5FAAB0;
+  color: black;
   font-size: 25px;
+  text-align: center;
 }
 
-h3 {
-  color: grey;
-  font-size: 20px;
-}
-
-h1, h2 {
+h1, h2  {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -44,7 +41,8 @@ a:hover {
 
 
 .container {
-  width: 1200px;
+  width: 85vw;
+  height: 100vh;
   margin: 40px auto;
   color: grey;
 }
@@ -104,6 +102,65 @@ padding: 15px 20px;
 .main {
   display: flex;
   align-items: center;
+  margin-top: 100px;
+
+}
+
+#email {
+  width: 350;
+  height: 40;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: solid;
+}
+
+
+
+#submit {
+  background-color: black;
+  color: white;
+  height: 40;
+  width: 100;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+
+}
+
+.email-submit {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar > h3 {
+  margin: 10px;
+  color: black;
+}
+
+input::placeholder {
+  color: grey;
+  font-size: 15px;
+  padding: 15px;
 }
 
 
