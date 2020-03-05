@@ -52,6 +52,7 @@ a:hover {
   height: 100vh;
   margin: 40px auto;
   color: grey;
+  background-color: white;
 }
 
 @media (max-width: 960px) {
