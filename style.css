@@ -4,6 +4,13 @@ h1 {
   color: black;
   font-size: 80px;
   font-weight: bold;
+  letter-spacing: -2PX;
+}
+
+h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 h2 {
@@ -12,7 +19,7 @@ h2 {
   text-align: center;
 }
 
-h1, h2  {
+h1, h2, p, h3  {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -176,14 +183,45 @@ input::placeholder {
 
 .testimonials {
   width: 100%;
-  background-color: #F5F0EB;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
   hight: 900px;
 }
 
+.testi {
+  background-color: #F5F0EB;
+  color: black;
+  padding: 15px;
+  width: 400px;
+  text-align: center;
+  margin: 30px;
+}
+
+.checks {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
 
 
+.testi > h2 {
+  margin-top: 5px;
+}
+
+.testi > p {
+  padding: 20px;
+}
 
 
+.btn-testi {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+}
 
 
 
